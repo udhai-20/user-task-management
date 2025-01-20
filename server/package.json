@@ -1,0 +1,32 @@
+{
+  "name": "taskflow",
+  "version": "1.0.0",
+  "description": "An Express.js-based task management system with JWT authentication, task CRUD operations, and a global feed for all users.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "\"express\"",
+    "\"task",
+    "manager\"",
+    "\"jwt\"",
+    "\"authentication\"",
+    "\"mongodb\""
+  ],
+  "author": "udhaya udhayaprakash1897@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5",
+    "nodemon": "^3.1.9"
+  }
+}
