@@ -6,6 +6,7 @@ class MainRoutes{
     static init() {
         const router = express.Router();
         router.use('/user', UserRoutes.routes());
+        
 
         return router;
     }
