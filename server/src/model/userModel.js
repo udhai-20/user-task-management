@@ -1,7 +1,6 @@
 
 const mongoose = require('mongoose');
 
-const crypto = require('crypto');
 const { Schema } = mongoose;
 const userSchema = new Schema({
     name: {
@@ -10,8 +9,9 @@ const userSchema = new Schema({
     },
     email: {
         type: String,
+        index: true,
         required: true,
-        unique: true
+        unique: true,
     },
     password: {
         type: String,
@@ -25,9 +25,6 @@ const userSchema = new Schema({
     { timestamps: true });
 
 
-
-
 const UserModel = mongoose.model('User', userSchema);
-
-
+UserModel.createIndexes({ email: 1,unique:true });
 module.exports = UserModel;
